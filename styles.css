@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Matrix Regular Small Caps";
+    src: url("MatrixRegularSmallCaps.ttf") format("truetype")
+  }
+
+  body {
+    background: #FFF7BC;
+    color: #000;
+    font-size: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FF8080;
+  }
+
+  a:hover {
+    color: #ef4848;
+  }
+
+  header, main, footer {
+    text-align: center;
+  }
+
+  main {
+    margin: 10px auto;
+  }
+
+  footer {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  input, select, button {
+    background: #ccee64;
+    border: 1px solid #C0EDA5;
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-family: "Matrix Regular Small Caps", sans-serif;
+    color: #FD5D5D;
+    font-size: 4em;
+  }
+
+  h3, h4 {
+    color: #FD5D5D;
+  }
+
+  img.cImage {
+    max-height: 500px;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  div.flex > div {
+    width: calc(100% / 3);
+  }
+
+  nav {
+    justify-content: space-between !important;
+  }
+
+  #trading-list {
+    text-align: left;
+    flex-flow: column;
+  }
+
+  #trading-list > div {
+    width: 100%;
+  }
+
+  #user-links {
+    text-align: right;
+  }
+
+  #sign-in {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    width: 200px;
+    height: 200px;
+    background: url(images/card.jpg) no-repeat;
+    background-size: contain;
+    padding-top: 100px;
+    padding-left: 13px;
+  }
+
+  #sign-in input, #sign-in button {
+    background: #fde689;
+    border-color: #2f3348;
+  }
+
+  img.yugi {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 15%;
+  }
+
+  img.kaiba {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 15%;
+  }

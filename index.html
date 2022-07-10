@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh Card Trading</title>
+    <link rel="stylesheet" href="styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="flex">
+            <div id="statistics">
+                <a href="javascript: void(0)">Statistics</a>
+            </div>
+        <div>
+            <a href="index.html">Home</a> &middot; 
+            <a href="tos.html">Terms of Service</a> &middot; 
+            <a href="feedback.html">Feedback</a> &middot; 
+            <a href="members.html">Members</a> &middot; 
+            <a href="help.html">Help</a> &middot; 
+            <a href="contact.html">Contact Us</a>
+        </div>
+            <div id="user-links"><a href="register.html">Register</a> &middot; <a href="javascript: void(0)">Sign In</a></div>
+        </nav>
+        <h1>Yu-Gi-Oh Card Trading</h1>
+    </header>
+
+    <main>
+        <div class="flex">
+        <div id="search-terms"><h3>Popular Search Terms</h3></div>
+        <div id="search">
+            <input type="text" name="haves" placeholder="Card Name">
+            <select>
+                <option value="-1">Select Card Type</option>
+                <option value="normal">Normal Monster</option>
+                <option value="effect">Effect Monster</option>
+                <option value="fusion">Fusion Monster</option>
+                <option value="synchro">Synchro Monster</option>
+                <option value="xyz">Xyz Monster</option>
+                <option value="pendulum">Pendulum Monster</option>
+                <option value="link">Link Monster</option>
+                <option value="spell">Spell Card</option>
+                <option value="trap">Trap Card</option>
+            </select>
+            <button type="button">Add To My Haves</button><br><br>
+            <input type="text" name="wants" placeholder="Card Name">
+            <select>
+                <option value="-1">Select Card Type</option>
+                <option value="normal">Normal Monster</option>
+                <option value="effect">Effect Monster</option>
+                <option value="fusion">Fusion Monster</option>
+                <option value="synchro">Synchro Monster</option>
+                <option value="xyz">Xyz Monster</option>
+                <option value="pendulum">Pendulum Monster</option>
+                <option value="link">Link Monster</option>
+                <option value="spell">Spell Card</option>
+                <option value="trap">Trap Card</option>
+            </select>
+            <button type="button">Add To My Wants</button><br><br>
+        <div id="trading-list" class="flex">
+            <div>
+            <h4>Haves:</h4>
+            <div id="haves">
+                <ul class="normal"><li>Normal Monster</li><ul></ul></ul>
+                <ul class="effect"><li>Effect Monster</li><ul></ul></ul>
+                <ul class="fusion"><li>Fusion Monster</li><ul></ul></ul>
+                <ul class="synchro"><li>Synchro Monster</li><ul></ul></ul>
+                <ul class="xyz"><li>Xyz Monster</li><ul></ul></ul>
+                <ul class="pendulum"><li>Pendulum Monster</li><ul></ul></ul>
+                <ul class="link"><li>Link Monster</li><ul></ul></ul>
+                <ul class="spell"><li>Spell Card</li><ul></ul></ul>
+                <ul class="trap"><li>Trap Card</li><ul></ul></ul>
+            </div>
+            </div>
+            <div>
+            <h4>Wants:</h4>
+            <div id="wants">
+                <ul class="normal"><li>Normal Monster</li><ul></ul></ul>
+                <ul class="effect"><li>Effect Monster</li><ul></ul></ul>
+                <ul class="fusion"><li>Fusion Monster</li><ul></ul></ul>
+                <ul class="synchro"><li>Synchro Monster</li><ul></ul></ul>
+                <ul class="xyz"><li>Xyz Monster</li><ul></ul></ul>
+                <ul class="pendulum"><li>Pendulum Monster</li><ul></ul></ul>
+                <ul class="link"><li>Link Monster</li><ul></ul></ul>
+                <ul class="spell"><li>Spell Card</li><ul></ul></ul>
+                <ul class="trap"><li>Trap Card</li><ul></ul></ul>
+            </div>
+        </div>
+        </div>
+        <button type="submit">Publish Have/Want List</button>
+        </div>
+        <div id="top-feedback"><h3>Top 10 Highest Feedback Scores</h3></div>
+        </div>
+        <span id="sign-in">
+            <form action="/" method="post">
+                <input type="text" name="username" placeholder="Username"><br><br>
+                <input type="password" name="password" placeholder="Password"><br><br>
+                <button type="submit">Sign In</button>
+            </form>
+        </span>
+        <img src="images/yugi.png" alt="Yugi" class="yugi">
+        <img src="images/kaiba.png" alt="Kaiba" class="kaiba">
+    </main>
+
+    <footer>&copy; Cory Roberts 2022</footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
